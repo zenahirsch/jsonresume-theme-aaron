@@ -1,0 +1,146 @@
+body {
+	background: #fff;
+	font: 16px 'Alegreya', serif;
+	line-height: 1.5;
+	margin: 50px 0;
+	margin-bottom: 100px;
+	color: rgba(0, 0, 0, 0.7);
+}
+em {
+	color: #999;
+}
+p {
+	line-height: 1.5;
+	margin-top: 0.3em;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin-bottom: 2em;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+.item {
+	margin-bottom: 1em;
+}
+#resume {
+	margin: 0 auto;
+	max-width: 750px;
+	padding: 0 20px;
+}
+
+#profiles,
+#skills {
+	overflow: hidden;
+}
+#profiles .item,
+#skills .item {
+	float: left;
+	width: 50%;
+}
+
+.em {
+	font-style: italic;
+}
+
+#basics {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 1em;
+	border-bottom: solid 1px gray;
+	margin-bottom: 2em;
+	font-size: 0.95em;
+}
+
+#basics li {
+	list-style-type: none;
+	display: inline-block;
+	width: 33%;
+}
+
+.keywords {
+	margin: 0;
+	padding: 0;
+}
+
+.keywords li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 2em;
+}
+
+#basics li:nth-of-type(2) {
+	text-align: center;
+}
+
+#basics li:last-of-type {
+	text-align: right;
+}
+
+.light {
+	color: gray;
+}
+
+#summary {
+	float: left;
+}
+
+#symbol {
+	font-size: 2em;
+	display: inline-block;
+	float: left;
+	width: 6%;
+	margin-top: 0;
+}
+
+#summary p {
+	display: inline-block;
+	float: left;
+	width: 94%;
+	margin-top: 0;
+}
+
+.item {
+	margin-left: 6%;
+}
+
+.item-top {
+	width: 100%;
+}
+
+.organization {
+	font-weight: bold;
+	width: 50%;
+	float: left;
+}
+
+.date {
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+.position, .awarder, .publisher {
+	font-style: italic;
+}
+
+.small {
+	font-size: 0.9em;
+}
+
+.strong {
+	font-weight: bold;
+}
