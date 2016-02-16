@@ -27,9 +27,10 @@
 		<h1>{{name}}, <span class="em">{{label}}</span></h1>
 
 		<ul id="basics" class="light">
-			<li>{{website}}</li>
+			<li><a href="{{website}}">Website</a></li>
 			<li>{{email}}</li>
 			<li>{{phone}}</li>
+			<li>{{location.city}}, {{location.region}}, {{location.countryCode}}</li>
 		</ul>
 
 		<section id="summary">
@@ -245,7 +246,7 @@
 						{{#if name}}<span class="name">{{name}}</span>{{/if}}{{#if level}} <span class="level">({{level}})</span>{{/if}}
 					</div>
 					{{#if keywords.length}}
-					<ul class="keywords">
+					<ul class="courses">
 						{{#each keywords}}
 						<li class="small">{{.}}</li>
 						{{/each}}
@@ -265,7 +266,7 @@
 						{{#if name}}<span class="name">{{name}}</span>{{/if}}
 					</div>
 					{{#if keywords.length}}
-						<ul class="keywords">
+						<ul class="courses">
 							{{#each keywords}}
 							<li class="small">{{.}}</li>
 							{{/each}}

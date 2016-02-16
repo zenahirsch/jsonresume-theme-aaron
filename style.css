@@ -5,6 +5,7 @@ body {
 	margin: 50px 0;
 	margin-bottom: 100px;
 	color: rgba(0, 0, 0, 0.7);
+	min-width: 680px;
 }
 em {
 	color: #999;
@@ -16,11 +17,12 @@ p {
 
 a {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.4);
+	color: #337ab7;
+	opacity: 0.8;
 }
 
 a:hover {
-	color: rgba(0, 0, 0, 0.7);
+	opacity: 0.6;
 }
 
 ul {
@@ -36,6 +38,11 @@ blockquote {
 .item {
 	margin-bottom: 1em;
 }
+
+#interests .item:last-child, #skills .item:last-child, #education .item:last-child {
+	margin-bottom: 0;
+}
+
 #resume {
 	margin: 0 auto;
 	max-width: 750px;
@@ -48,8 +55,6 @@ blockquote {
 }
 #profiles .item,
 #skills .item {
-	float: left;
-	width: 50%;
 }
 
 .em {
@@ -60,7 +65,7 @@ blockquote {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 1em;
-	border-bottom: solid 1px gray;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 	margin-bottom: 2em;
 	font-size: 0.95em;
 }
@@ -68,7 +73,16 @@ blockquote {
 #basics li {
 	list-style-type: none;
 	display: inline-block;
-	width: 33%;
+	width: 24.5%;
+	text-align: center;
+}
+
+#basics li:first-of-type {
+	text-align: left;
+}
+
+#basics li:last-of-type {
+	text-align: right;
 }
 
 .keywords {
@@ -77,17 +91,7 @@ blockquote {
 }
 
 .keywords li {
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 2em;
-}
 
-#basics li:nth-of-type(2) {
-	text-align: center;
-}
-
-#basics li:last-of-type {
-	text-align: right;
 }
 
 .light {
@@ -117,13 +121,28 @@ blockquote {
 	margin-left: 6%;
 }
 
+.level {
+	font-weight: normal;
+	font-style: italic;
+}
+
+#skills .item, #interests .item {
+	margin-bottom: 2em;
+}
+
 .item-top {
 	width: 100%;
 }
 
+.courses li {
+	display: inline-block;
+	width: 33%;
+	opacity: 0.7;
+}
+
 .organization {
 	font-weight: bold;
-	width: 50%;
+	width: 49%;
 	float: left;
 }
 
